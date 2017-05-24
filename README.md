@@ -1,2 +1,2 @@
 # AutoHotkey-Scripts
-My Personal AutoHotkey Scripts
+AutoHotkey Scripts
