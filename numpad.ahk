@@ -1,4 +1,22 @@
-; numpad shortcuts
+; numpad.ahk: Auto Hotkey configuration file for 10-key numpad
+; Xilin Sun
+; This work has been identified as being free of known restrictions under
+; copyright law, including all related and neighboring rights. 
+
+; original layout
+; +---------+---------+---------+---------+
+; | [       | ]       | =       | BackSp  |
+; +---------+---------+---------+---------+
+; | NumLk   | /       | *       | -       |
+; +---------+---------+---------+---------+
+; | 7       | 8       | 9       | +       |
+; +---------+---------+---------+---------+
+; | 4       | 5       | 6       | Tab     |
+; +---------+---------+---------+---------+
+; | 1       | 2       | 3       | Enter   |
+; +---------+---------+---------+         +
+; | 0                 | .       |         |
+; +-------------------+---------+---------+
 
 ; Numlock On
 ; Numpad0::LCtrl
@@ -13,8 +31,24 @@
 ;Numpad9::Send ^{PgDn}
 ; NumpadDot::LWin
 
+
+
+; +---------+---------+---------+---------+
+; | [       | ]       | =       | BackSp  |
+; +---------+---------+---------+---------+
+; | NumLk   | ^z      | ^+z     | ^w      |
+; +---------+---------+---------+---------+
+; | PrevTab | Up      | NextTab | ^t      |
+; +---------+---------+---------+---------+
+; | <-      | Down    | ->      | Tab     |
+; +---------+---------+---------+---------+
+; | ^x      | ^c      | ^v      |         |
+; +---------+---------+---------+ LAlt    |
+; | LCtrl             | LWin    |         |
+; +-------------------+---------+---------+
+
 ; NumLock OFF
-NumpadIns::LCtrl
+NumpadIns::LCtrl///
 NumpadEnd::Send ^x
 NumpadDown::Send ^c
 NumpadPgDn::Send ^v
@@ -32,7 +66,7 @@ NumpadEnter::LAlt
 
 
 ; Combinations
-; Ctrl
+; Ctrl - select browser tabs
 NumpadIns & NumpadEnd::Send ^1
 NumpadIns & NumpadDown::Send ^2
 NumpadIns & NumpadPgDn::Send ^3
@@ -47,7 +81,7 @@ NumpadIns & NumpadPgup::Send ^9
 NumpadIns & NumpadSub::Send {PgUp}
 NumpadIns & NumpadAdd::Send {PgDn}
 
-; Win
+; Win - select windows
 NumpadDel & NumpadEnd::Send #1
 NumpadDel & NumpadDown::Send #2
 NumpadDel & NumpadPgDn::Send #3
@@ -71,4 +105,4 @@ NumpadEnter & NumpadPgup::Send !9
 
 ; General 
 ~LWin Up::Return
-;CapsLock::Ctrl
+; CapsLock::Ctrl
