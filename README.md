@@ -1,18 +1,20 @@
-# AutoHotkey scripts
+# AUTOHOTKEY SCRIPTS
 
-AHK scripts for key tweaking on Windows. 
+AutoHotkey scripts for key tweaking on Windows. 
 
-## How to use
+## HOWTO
 
 Install [AutoHotkey](https://autohotkey.com/download/).
 
 Open a `.ahk` file with AutoHotkey.
 
-## numpad.ahk
+## SCRIPTS
 
-remapping numpad keys to enable shortcuts
+### numpad.ahk
 
 ```
+; remapping numpad keys to enable shortcuts
+
 +---------+---------+---------+---------+
 | [       | ]       | =       | BackSp  |
 +---------+---------+---------+---------+
@@ -27,3 +29,7 @@ remapping numpad keys to enable shortcuts
 | LCtrl             | LWin    |         |
 +-------------------+---------+---------+
 ```
+
+## LICENSE
+
+These scripts are released to the public domain.
