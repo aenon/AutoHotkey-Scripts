@@ -48,7 +48,7 @@
 ; +-------------------+---------+---------+
 
 ; NumLock OFF
-NumpadIns::LCtrl///
+NumpadIns::LCtrl
 NumpadEnd::Send ^x
 NumpadDown::Send ^c
 NumpadPgDn::Send ^v
